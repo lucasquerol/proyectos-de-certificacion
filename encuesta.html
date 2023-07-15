@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Encuesta">
+        <title>Encuesta</title>
+        <link rel="stylesheet" href="encuesta.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1 id="title">Encuesta</h1>
+                <p id="description">Por favor responda el contenido de la misma, con el fin de brindar su ayuda para mejorar el servicio, muchas gracias.</p>
+            </header>
+
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input class="form-control" name="name" id="name" type="text" placeholder="ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>
+                    <input class="form-control" name="email" id="email" type="email" placeholder="ingrese su email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="age">Edad</label>
+                    <input max="100" min="18" class="form-control" name="age" id="age" type="number" placeholder="Edad" required>
+                </div>
+                <div class="form-group">
+                    <p>Sexo</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected>Seleccione una opción</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="otro">Otro</option>
+                        <option value="prefiero-no-contestar">Prefiero no contestar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>¿Recomendarias el servicio?</p>
+                    <label for="definitivamente">
+                        <input class="input-radio" name="recomendacion" id="definitivamente" value="definitivamente" type="radio">Definitivamente
+                    </label>
+                    <label for="tal-vez">
+                        <input class="input-radio" name="recomendacion" id="tal-vez" value="tal-vez" type="radio">Tal vez
+                    </label>
+                    <label for="no-estoy-seguro">
+                        <input class="input-radio" name="recomendacion" id="no-estoy-seguro" value="no-estoy-seguro" type="radio">No estoy seguro
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>¿En qué areas usted cree que puede mejorar la empresa?</p>
+                    <label for="atencion-publico">
+                        <input class="input-checkbox" value="atencion-publico" name="mejoras" id="atencion-publico" type="checkbox">Atención al público
+                    </label>
+                    <label for="ventas">
+                        <input class="input-checkbox" value="ventas" name="mejoras" id="ventas" type="checkbox">Ventas
+                    </label>
+                    <label for="marketing">
+                        <input class="input-checkbox" value="marketing" name="mejoras" id="marketing" type="checkbox">Marketing
+                    </label>
+                    <label for="recursos-humanos">
+                        <input class="input-checkbox" value="recursos-humanos" name="mejoras" id="recursos-humanos" type="checkbox">Recursos humanos
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>¿Algún comentario o sugerencia?</p>
+                    <textarea id="sugerencia" class="input-textarea" name="textarea" placeholder="Ingrese su comentario aquí" rows="3" cols="30"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="boton-enviar" id="submit" type="submit">Enviar</button>
+                </div>
+                
+                
+                
+
+            </form>
+
+        </div>
+
+    </body>
+</html>
